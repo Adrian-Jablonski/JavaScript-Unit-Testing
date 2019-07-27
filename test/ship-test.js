@@ -66,7 +66,7 @@ describe("fire", function() {
     let fire = require("../game-logic/ship-methods").fire;
     let player;
 
-    this.beforeEach(function() {
+    beforeEach(function() {
         // beforeEach sets the player variable before each test. Useful if there are tests that alter the player object
         player = {
             ships: [
@@ -76,6 +76,15 @@ describe("fire", function() {
                 }
             ]
         };
+    });
+
+    // After and afterEach are useful for tearing down data added to a database during testing
+    after(function() {
+        console.log("Entire test suite completed");
+    });
+
+    afterEach(function() {
+        console.log("- One unit test completed");
     });
 
     it("should record damage on the given players ship at a given coordinate", function() {
