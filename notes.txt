@@ -2,3 +2,7 @@
 
 mocha --reporter min   (prints failing tests only)
 mocha --reporter markdown    (Prints test markdown format which could be used for documentation)
+
+
+ mocha --watch ./test/game-test.js ./game-logic/game-instance.js    (Setting this up in package.json will run all tests automatically when they are saved)
+ mocha --watch ./test/game-test.js ./game-logic/game-instance.js    (Watches a specific test)
