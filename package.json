@@ -11,7 +11,8 @@
     },
     "scripts": {
         "test": "mocha",
-        "test:watch": "mocha --watch ./test ./"
+        "test-watch": "mocha --watch ./test ./",
+        "test-watch-fail": "mocha --reporter min --watch ./test ./"
     },
     "repository": {
         "type": "git",
