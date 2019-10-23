@@ -17,7 +17,6 @@ describe("Mocha", function () {
     })
 
     it("should run our tests using npm", function (done) {
-        console.log("**Running next")
         expect(true).to.be.ok;
         done();
     }); // Tests if mocha works when typing npm test
